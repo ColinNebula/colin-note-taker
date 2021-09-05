@@ -1,0 +1,26 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "AS A small business owner\r I WANT to be able to write and save notes\r SO THAT I can organize my thoughts and keep track of tasks I need to complete",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-boot-camp/miniature-eureka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coding-boot-camp/miniature-eureka/issues"
+  },
+  "homepage": "https://github.com/coding-boot-camp/miniature-eureka#readme"
+}
