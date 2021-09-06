@@ -17,8 +17,10 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Project URl
-https://git.heroku.com/pure-basin-29870.git
+https://pure-basin-29870.herokuapp.com/
+
 http://localhost:3001/
+
 
 ## Github Repository link
 https://github.com/ColinNebula/colin-note-taker
