@@ -1,4 +1,4 @@
-# Note Taker Starter Code
+# Note Taker Project
 
 
 ## Description
@@ -17,6 +17,7 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Project URl
+https://git.heroku.com/pure-basin-29870.git
 http://localhost:3001/
 
 ## Github Repository link
