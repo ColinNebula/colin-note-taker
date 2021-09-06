@@ -1,10 +1,52 @@
 # Note Taker Starter Code
 
+
+## Description
+Note Taker is a small web application that allows the user to write snd save notes to a list, also delete unwanted notes. The entire application is generated using nodeJs, express npm and insomnia for testing the ports and routes. Javascript is used to create routes such as api routes and html routes to get and also post to the server.
+
+# Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+
 ## User Story
 AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
+## Project URl
+http://localhost:3001/
+
+## Github Repository link
+https://github.com/ColinNebula/colin-note-taker
+
+## Project Mock-Up
+![11-express-homework-demo-01](https://user-images.githubusercontent.com/57843842/132145515-be33c0f1-1a04-41d2-aed7-551228de901d.png)
+
+![11-express-homework-demo-02](https://user-images.githubusercontent.com/57843842/132145517-27148db2-2e1d-406a-a9fd-3d83b57edeb6.png)
+
+
+## Project Screenshot
+![NoteTaker_Screenshot](https://user-images.githubusercontent.com/57843842/132149458-7a8136a2-0671-4f24-9b6a-629434f70cff.jpg)
+
+![NoteTaker_Screenshot_01](https://user-images.githubusercontent.com/57843842/132149461-66c71997-391d-4796-b899-54c834418e47.jpg)
+
+![NoteTaker_Screenshot_02](https://user-images.githubusercontent.com/57843842/132149463-9a96ac44-edca-458c-a4ce-01f8aa50873d.jpg)
+
+## Installation
+npm start at the command prompt to run the server.
+http://localhost:3001
+
+## Usage
+N/A
+
+## Credits
+Colin Nebula
+
+## License
+MIT
 
 ## Acceptance Criteria
 -taking application

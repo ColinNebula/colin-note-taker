@@ -1,6 +1,5 @@
 // // Modules required
 const router = require('express').Router();
-// const noteRoutes = require('../apiRoutes/noteRoutes');
 
 // router.use(noteRoutes);
 const { filterByQuery, findById, createNewNote, validateNote } = require('../../lib/notes');
@@ -41,6 +40,28 @@ const { notes } = require('../../data/notes');
     }
    });
 
+   // Delete a note
+router.delete('/notes/:id', (req, res) => {
+  const result = findById(req.params.id, notes);
+  const notes = `DELETE FROM notes WHERE id = ?`;
+
+  data.query(result, params, (err, result) => {
+    if (err) {
+      res.statusMessage(400).json({ error: res.message });
+    } else if (!result.affectedRows) {
+      res.json({
+        message: 'Note not found'
+      });
+    } else {
+      res.json({
+        message: 'deleted',
+        changes: result.affectedRows,
+        id: req.params.id
+      });
+    }
+  });
+});
 
 
+// Export
 module.exports = router;
