@@ -2,8 +2,8 @@
 const router = require('express').Router();
 
 // router.use(noteRoutes);
-const { filterByQuery, findById, createNewNote, validateNote } = require('../../lib/notes');
-const { notes } = require('../../data/notes');
+const { filterByQuery, findById, createNewNote, deleteNote, validateNote } = require('../../lib/notes');
+let { notes } = require('../../data/notes');
   
 // API call find by Query
   router.get('/notes', (req, res) => {
@@ -43,27 +43,23 @@ const { notes } = require('../../data/notes');
    // PUT route
 
    // Delete a note
-// Delete a candidate
-router.delete('/api/note/:id', (req, res) => {
-  const sql = `DELETE FROM notes WHERE id = ?`;
-  const params = [req.params.id];
+router.delete('/notes/:id', (req, res) => {
+  
+const deleteNoteId = req.params.id;
+const editedNotes = deleteNote(deleteNoteId, notes);
+notes = editedNotes;
+console.log(editedNotes, notes);
 
-  db.query(sql, params, (err, result) => {
-    if (err) {
-      res.statusMessage(400).json({ error: res.message });
-    } else if (!result.affectedRows) {
-      res.json({
-        message: 'Note not found'
-      });
-    } else {
+    if (typeof deletedNote === 'string' ) {
+        res.status(400).json({ error: editedNotes });
+    }else {
       res.json({
         message: 'deleted',
-        changes: result.affectedRows,
         id: req.params.id
       });
     }
   });
-});
+
 
 
 // Export
