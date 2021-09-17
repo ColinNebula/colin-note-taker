@@ -27,7 +27,12 @@ app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
-// Port Listener
+// Delete notes route
+app.delete('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+// Start server
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });

@@ -40,12 +40,15 @@ const { notes } = require('../../data/notes');
     }
    });
 
-   // Delete a note
-router.delete('/notes/:id', (req, res) => {
-  const result = findById(req.params.id, notes);
-  const notes = `DELETE FROM notes WHERE id = ?`;
+   // PUT route
 
-  data.query(result, params, (err, result) => {
+   // Delete a note
+// Delete a candidate
+router.delete('/api/note/:id', (req, res) => {
+  const sql = `DELETE FROM notes WHERE id = ?`;
+  const params = [req.params.id];
+
+  db.query(sql, params, (err, result) => {
     if (err) {
       res.statusMessage(400).json({ error: res.message });
     } else if (!result.affectedRows) {
