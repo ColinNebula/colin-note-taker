@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 // router.use(noteRoutes);
 const { filterByQuery, findById, createNewNote, deleteNote, validateNote } = require('../../lib/notes');
-let { notes } = require('../../data/notes');
+let { notes } = require('../../data/notes.json');
   
 // API call find by Query
   router.get('/notes', (req, res) => {
