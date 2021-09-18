@@ -2,7 +2,7 @@
 
 
 ## Description
-Note Taker is a small web application that allows the user to write snd save notes to a list, also delete unwanted notes. The entire application is generated using nodeJs, express npm and insomnia for testing the ports and routes and heroku for . Javascript is used to create routes such as api routes and html routes to get and also post to the server.
+Note Taker is a small web application that allows the user to write snd save notes to a list, also delete unwanted notes. The entire application is generated using nodeJs, express npm and insomnia for testing the ports and routes and heroku for deploying. Javascript is used to create routes such as api routes and html routes to GET and also POST to the server.
 
 # Table of Contents
 * [Installation](#installation)
@@ -17,9 +17,8 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Project URl
-https://pure-basin-29870.herokuapp.com/
+https://pure-basin-29870.herokuapp.com/ deployed to Heroku
 
-http://localhost:3001/
 
 
 ## Github Repository link
