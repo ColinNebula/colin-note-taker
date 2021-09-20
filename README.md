@@ -22,7 +22,7 @@ https://pure-basin-29870.herokuapp.com/ deployed to Heroku
 
 
 ## Github Repository link
-https://github.com/ColinNebula/colin-note-taker
+https://github.com/ColinNebula/colin-note-taker/tree/main
 
 ## Project Mock-Up
 ![11-express-homework-demo-01](https://user-images.githubusercontent.com/57843842/132145515-be33c0f1-1a04-41d2-aed7-551228de901d.png)
